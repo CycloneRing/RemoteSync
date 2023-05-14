@@ -1,4 +1,4 @@
-﻿/*
+/*
   
      =============================================================
       _____                      _        _____
@@ -421,9 +421,9 @@ namespace RemoteSyncCore
             string appName = Assembly.GetExecutingAssembly().Location;
             RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
 
-            if (key.GetValue("AppSync Service") == null)
+            if (key.GetValue("RemoteSync Service") == null)
             {
-                key.SetValue("AppSync Service", $"\"{appName}\" --noheader");
+                key.SetValue("RemoteSync Service", $"\"{appName}\" --noheader");
                 Console.WriteLine("RemoteSync Server Installed on System Startup!");
             }
             else
@@ -435,9 +435,9 @@ namespace RemoteSyncCore
         {
             RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
 
-            if (key.GetValue("AppSync Service") != null)
+            if (key.GetValue("RemoteSync Service") != null)
             {
-                key.DeleteValue("AppSync Service");
+                key.DeleteValue("RemoteSync Service");
                 Console.WriteLine("RemoteSync Server Removed from System Startup!");
             }
             else
