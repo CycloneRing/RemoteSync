@@ -16,7 +16,7 @@
     =============================================================
 
     Forum Link :
-    https://www.unknowncheats.me/forum/anti-cheat-bypass/583518-remotesync-file-transfer-service.html#post3750801
+    https://www.unknowncheats.me/forum/anti-cheat-bypass/583518-remotesync-file-transfer-service.html
 
   
  */
